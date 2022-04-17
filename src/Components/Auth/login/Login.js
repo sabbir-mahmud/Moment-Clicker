@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import UseFirebase from '../../../Hooks/useFirebase';
 
 const Login = () => {
-    const { HandleLogin, HandleGoogleLogin, handleFacebookLogin, handleGithubLogin, handleOAuthLogin, phoneLogIn, yahooLogin } = UseFirebase();
+    const { HandleLogin, HandleGoogleLogin, yahooLogin } = UseFirebase();
     return (
         <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
             <div className="w-3/5 relative py-3 sm:max-w-xl sm:mx-auto">
@@ -27,35 +27,21 @@ const Login = () => {
                                         <input id='password' name='password' type="password" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="password" />
                                     </div>
 
-                                    <div className="pt-4 flex items-center space-x-4">
+                                    <div className="py-4 flex items-center space-x-4">
                                         <input type="submit" className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none" value="log in" />
                                     </div>
-                                    <hr className='mb-3' />
-                                    <Link className='my-3 text-underline text-blue' to='/reset-password'>forget your password?</Link>
+
+                                    <Link className='py-3 text-underline text-blue' to='/reset-password'>forget your password?</Link>
+                                    <Link className='mx-3 py-3 text-underline text-blue' to='/Register'>Create Account</Link>
 
                                     <hr />
-                                    <div className="pt-4 flex items-center space-x-4">
-                                        <button onClick={HandleGoogleLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Google</button>
 
-                                    </div>
-                                    <div className="pt-4 flex items-center space-x-4">
-                                        <button onClick={handleOAuthLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Microsoft</button>
-
-                                    </div>
-                                    <div className="pt-4 flex items-center space-x-4">
-                                        <button onClick={handleFacebookLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Facebook</button>
-
-                                    </div>
-                                    <div className="pt-4 flex items-center space-x-4">
-                                        <button onClick={handleGithubLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Github</button>
-
-                                    </div>
-                                    <div className="pt-4 flex items-center space-x-4">
-                                        <button onClick={phoneLogIn} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Phone</button>
-
-                                    </div>
                                     <div className="pt-4 flex items-center space-x-4">
                                         <button onClick={yahooLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Yahoo</button>
+
+                                    </div>
+                                    <div className="pt-4 flex items-center space-x-4">
+                                        <button onClick={HandleGoogleLogin} className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Google</button>
 
                                     </div>
                                 </div>

@@ -24,11 +24,11 @@ const Register = () => {
                                     </div>
                                     <div className="flex flex-col">
                                         <label htmlFor='password' className="leading-loose">Password</label>
-                                        <input id='password' name='firstPassword' type="text" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="password" />
+                                        <input id='password' name='firstPassword' type="password" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="password" />
                                     </div>
                                     <div className="flex flex-col">
                                         <label htmlFor='password' className="leading-loose">Confirm Password</label>
-                                        <input id='password' name='ConfirmPassword' type="text" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="password" />
+                                        <input id='password' name='ConfirmPassword' type="password" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="password" />
                                     </div>
 
                                     <div className="flex flex-col">
