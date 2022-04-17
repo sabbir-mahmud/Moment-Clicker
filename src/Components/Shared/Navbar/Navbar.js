@@ -7,7 +7,7 @@ const Navbar = () => {
         <div>
             <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
-                    <CustomLink to="/" className="flex items-center">
+                    <CustomLink style={{ TextDecoder: "none" }} to="/home" className="flex items-center">
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sabbir Mahmud</span>
                     </CustomLink>
                     <div className="flex items-center md:order-2">
@@ -28,21 +28,20 @@ const Navbar = () => {
                                 <CustomLink to="/">Home</CustomLink>
                             </li>
                             <li>
-                                <CustomLink to="/">About</CustomLink>
-                            </li>
-                            <li>
                                 <CustomLink to="/#service-container">Services</CustomLink>
                             </li>
                             <li>
-                                <CustomLink to="/">Pricing</CustomLink>
+                                <CustomLink to="/checkout">Checkout</CustomLink>
                             </li>
                             <li>
-                                <CustomLink to="/">Contact</CustomLink>
+                                <CustomLink to="/about">About</CustomLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
+
         </div>
     );
 };

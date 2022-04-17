@@ -1,0 +1,37 @@
+.img-wrapper{
+   width: 32rem;
+    height: 34rem; 
+}
+.shape-css{
+    top: 90px;
+    left: 1px;
+    z-index: -1;
+}
+.top-shape-css{
+    top: -30px;
+    left: 480px;
+    z-index: -1;
+}
+.right-shape-css{
+    top: 450px;
+    left: 515px;
+    z-index: -1;
+}
+
+/* responsive for mobile */
+@media (max-width: 767px) {
+    .img-wrapper{
+        width: 24rem;
+        height: 24rem; 
+        margin: auto;
+     }
+    .shape-css{
+        display: none;
+    }
+    .top-shape-css{
+        display: none;
+    }
+    .right-shape-css{
+       display: none;
+    }
+}

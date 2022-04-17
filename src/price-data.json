@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "name":"Wedding Day Shoot",
+        "type":"Only photo shoot",
+        "days":1,
+        "img":"https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":2,
+        "name":"Full Wedding Shoot",
+        "type":"Only photo shoot",
+        "days":3,
+        "img":"https://images.unsplash.com/photo-1534131707746-25d604851a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        "id":3,
+        "name":"Full Wedding Shoot",
+        "type":"Photo and video shoot",
+        "days":3,
+        "img":"https://images.unsplash.com/photo-1485846147915-69f12fbd03b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGNhbWVyYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+    }
+]
