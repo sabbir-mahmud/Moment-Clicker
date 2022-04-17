@@ -2,9 +2,11 @@ import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 import profile from '../../../images/profile.png';
 import UseFirebase from '../../../Hooks/useFirebase';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const { user, handleLogout } = UseFirebase();
+    const navigate = useNavigate();
     return (
         <div>
             <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800">
@@ -12,10 +14,10 @@ const Navbar = () => {
                     <CustomLink style={{ TextDecoder: "none" }} to="/home" className="flex items-center">
                         <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sabbir Mahmud</span>
                     </CustomLink>
-                    <div className="flex items-center md:order-2">
+                    <div onClick={() => navigate('/account')} className="flex items-center md:order-2">
                         <button type="button" className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
                             <span className="sr-only">Open user menu</span>
-                            <img src={profile} className="w-8 h-8 rounded-full" alt="user-img" />
+                            <img src={user?.photoURL ? user?.photoURL : profile} className="w-8 h-8 rounded-full" alt="" />
                         </button>
 
                         <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">

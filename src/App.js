@@ -9,6 +9,8 @@ import Checkout from './Components/Pages/Checkout/Checkout';
 import Footer from './Components/Shared/Footer/Footer';
 import Navbar from './Components/Shared/Navbar/Navbar';
 import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
+import Accounts from './Components/Pages/Accounts/Accounts';
+import NotFound from './Components/Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/checkout" element={<RequireAuth><Checkout /></RequireAuth>} />
+        <Route path="/account" element={<RequireAuth><Accounts /></RequireAuth>} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/reset-password" element={<ResetPassword />} />
