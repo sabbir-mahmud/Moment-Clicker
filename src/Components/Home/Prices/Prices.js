@@ -9,7 +9,7 @@ const Prices = () => {
             .then(data => setPrices(data))
     }, [])
     return (
-        <div>
+        <div id='price-list'>
 
             <div className="price-title">
                 <h1 className='text-3xl my-16 text-center font-mono'>Prices</h1>

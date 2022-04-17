@@ -31,6 +31,9 @@ const Navbar = () => {
                                 <CustomLink to="/#service-container">Services</CustomLink>
                             </li>
                             <li>
+                                <CustomLink to="/#price-list">Prices</CustomLink>
+                            </li>
+                            <li>
                                 <CustomLink to="/checkout">Checkout</CustomLink>
                             </li>
                             <li>
