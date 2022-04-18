@@ -8,7 +8,7 @@ const Accounts = () => {
     const userImg = user.photoURL ? user.photoURL : avater;
     const navigate = useNavigate();
     const resetLink = () => {
-        navigate('/reset-user-password');
+        navigate('/change-password');
     }
     return (
         <div className="container mx-auto">
