@@ -12,6 +12,7 @@ import Login from './Components/Auth/login/Login';
 import Register from './Components/Auth/Register/Register';
 import ResetPassword from './Components/Auth/ResetPassword/ResetPassword';
 import ResetUserPassword from './Components/Auth/ResetUserPassword/ResetUserPassword';
+import Blogs from './Components/Pages/Blogs/Blogs';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/checkout" element={<RequireAuth><Checkout /></RequireAuth>} />
         <Route path="/account" element={<RequireAuth><Accounts /></RequireAuth>} />
+        <Route path="/blog" element={<Blogs />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
