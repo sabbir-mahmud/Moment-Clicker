@@ -4,12 +4,15 @@ import auth from "../firebase/firebase.init";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
+
 // firebase auth
 const UseFirebase = () => {
     // state
     const [user, setUser] = useState({});
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+
+
 
     // navigate to
     const location = useLocation();
@@ -46,13 +49,14 @@ const UseFirebase = () => {
                     setLoading(false);
                     navigate(from, { replace: true });
                 } else {
-                    alert("Please verify your email");
+                    handleLogout();
+                    setError("Please verify your email address");
                 }
             })
             .catch((error) => {
                 // Handle Errors here.
-                const errorCode = error.code;
                 const errorMessage = error.message;
+                setError(errorMessage);
                 setLoading(false);
             })
     };
@@ -69,7 +73,7 @@ const UseFirebase = () => {
             })
             .catch((error) => {
                 setLoading(false);
-                console.error(error)
+                setError(error.message);
             })
     }
 
@@ -88,7 +92,7 @@ const UseFirebase = () => {
             })
             .catch((error) => {
                 // Handle error.
-                console.log(error);
+                setError(error.message);
                 setLoading(false);
             });
     };
@@ -171,7 +175,7 @@ const UseFirebase = () => {
                 navigate('/login')
             })
             .catch((error) => {
-                console.log(error);
+                setError(error.message);
             });
     }
 
@@ -191,7 +195,7 @@ const UseFirebase = () => {
             // Update successful.
         }).catch((error) => {
             // An error ocurred
-            // ...
+            setError(error.message);
         });
     }
 

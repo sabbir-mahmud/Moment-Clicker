@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UseFirebase from '../../../Hooks/useFirebase';
-
 const Login = () => {
-    const { HandleLogin, HandleGoogleLogin, yahooLogin } = UseFirebase();
+    const { error, HandleLogin, HandleGoogleLogin, yahooLogin } = UseFirebase();
+
     return (
         <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
             <div className="w-3/5 relative py-3 sm:max-w-xl sm:mx-auto">
@@ -33,6 +33,10 @@ const Login = () => {
 
                                     <Link className='py-3 text-underline text-blue' to='/reset-password'>forget your password?</Link>
                                     <Link className='mx-3 py-3 text-underline text-blue' to='/Register'>Create Account</Link>
+
+                                    <div className="error my-7">
+                                        {error && <p className="text-red-500 text-sm">{error}</p>}
+                                    </div>
 
                                     <hr />
 

@@ -4,11 +4,7 @@ import UseFirebase from "../../../Hooks/useFirebase";
 
 function RequireAuth({ children }) {
     const { user, loading } = UseFirebase();
-
-
-    console.log(user);
     const location = useLocation();
-    console.log(loading, location);
 
     if (loading) {
         return;
