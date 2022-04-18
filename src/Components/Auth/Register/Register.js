@@ -5,7 +5,7 @@ const Register = () => {
     const { error, handleSignUp } = UseFirebase();
     return (
         <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
-            <div className="relative w-3/5 py-3 sm:max-w-xl sm:mx-auto">
+            <div className="relative w-full md:w-3/5 py-3 sm:max-w-xl sm:mx-auto">
                 <form onSubmit={handleSignUp}>
                     <div className="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
                         <div className="max-w-md mx-auto">
@@ -35,9 +35,11 @@ const Register = () => {
                                         <input id='full-name' name='fullName' type="text" className="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Full Name" />
                                     </div>
                                 </div>
-                                <div className="error my-7">
-                                    {error && <p className="text-red-500 text-sm">{error}</p>}
-                                </div>
+                                {
+                                    error && <div className="error my-7">
+                                        <p className="text-red-500 text-sm">{error}</p>
+                                    </div>
+                                }
                                 <div className="pt-4 flex items-center space-x-4">
                                     <button className="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Create</button>
                                 </div>
