@@ -12,7 +12,7 @@ const Navbar = () => {
             <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5  dark:bg-gray-800">
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <CustomLink style={{ TextDecoder: "none" }} to="/home" className="flex items-center">
-                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Sabbir Mahmud</span>
+                        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Moment Clicker</span>
                     </CustomLink>
                     <div onClick={() => navigate('/account')} className="flex items-center md:order-2">
                         <button type="button" className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
