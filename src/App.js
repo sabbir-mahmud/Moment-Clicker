@@ -1,16 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Login from './Components/Auth/login/Login';
-import Register from './Components/Auth/Register/Register';
-import ResetPassword from './Components/Auth/ResetPassword/ResetPassword';
 import Home from './Components/Home/Home';
 import About from './Components/Pages/About/About';
 import Checkout from './Components/Pages/Checkout/Checkout';
 import Footer from './Components/Shared/Footer/Footer';
 import Navbar from './Components/Shared/Navbar/Navbar';
-import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
 import Accounts from './Components/Pages/Accounts/Accounts';
 import NotFound from './Components/Pages/NotFound/NotFound';
+import RequireAuth from './Components/Auth/RequireAuth/RequireAuth';
+import Login from './Components/Auth/login/Login';
+import Register from './Components/Auth/Register/Register';
+import ResetPassword from './Components/Auth/ResetPassword/ResetPassword';
 import ResetUserPassword from './Components/Auth/ResetUserPassword/ResetUserPassword';
 
 function App() {
