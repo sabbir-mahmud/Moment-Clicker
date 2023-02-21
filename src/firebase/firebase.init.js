@@ -5,13 +5,22 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// const firebaseConfig = {
+//     apiKey: process.env.REACT_APP_apiKey,
+//     authDomain: process.env.REACT_APP_authDomain,
+//     projectId: process.env.REACT_APP_projectId,
+//     storageBucket: process.env.REACT_APP_storageBucket,
+//     messagingSenderId: process.env.REACT_APP_messagingSenderId,
+//     appId: process.env.REACT_APP_appId,
+// };
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_apiKey,
-    authDomain: process.env.REACT_APP_authDomain,
-    projectId: process.env.REACT_APP_projectId,
-    storageBucket: process.env.REACT_APP_storageBucket,
-    messagingSenderId: process.env.REACT_APP_messagingSenderId,
-    appId: process.env.REACT_APP_appId,
+    apiKey: "AIzaSyDt5vSvlDTrQBQePA7cdjhxT69Y3Wahxwk",
+    authDomain: "moment-clicker.firebaseapp.com",
+    projectId: "moment-clicker",
+    storageBucket: "moment-clicker.appspot.com",
+    messagingSenderId: "455724705999",
+    appId: "1:455724705999:web:982b0b83532a59b6ffafba",
+    measurementId: "G-PNTLXVJTRM"
 };
 
 // Initialize Firebase
