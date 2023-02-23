@@ -1,6 +1,7 @@
-.banner-img{
+.banner-img {
     background: url('https://images.unsplash.com/photo-1573676048035-9c2a72b6a12a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHdlZGRpbmclMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 450px;
 }

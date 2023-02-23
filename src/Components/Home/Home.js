@@ -8,17 +8,18 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <div className="recent-works-container container mx-auto rounded my-16">
-                <div className="recent-work-title my-16">
-                    <h1 className='text-3xl text-center font-mono'>Recent Works</h1>
-                </div>
-                <RecentWorks></RecentWorks>
+            <div className="recent-work-title my-12">
+                <h1 className='text-3xl text-center font-mono'>Recent Works</h1>
             </div>
+            <RecentWorks></RecentWorks>
+
             <div className="mb-16 container mx-auto">
                 <Services></Services>
             </div>
 
-            <Prices></Prices>
+            <div className="mb-16 container mx-auto">
+                <Prices></Prices>
+            </div>
 
         </div >
     );
