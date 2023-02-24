@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import CustomLink from '../CustomLink/CustomLink';
-import profile from '../../../images/profile.png';
-import UseFirebase from '../../../Hooks/useFirebase';
 import { useNavigate } from 'react-router-dom';
+import UseFirebase from '../../../Hooks/useFirebase';
+import profile from '../../../images/profile.png';
+import CustomLink from '../CustomLink/CustomLink';
 
 const Navbar = () => {
     const { user, handleLogout } = UseFirebase();
@@ -33,12 +33,6 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <CustomLink to="/checkout">Checkout</CustomLink>
-                            </li>
-                            <li>
-                                <CustomLink to="/about">About</CustomLink>
-                            </li>
-                            <li>
-                                <CustomLink to="/blog">Blog</CustomLink>
                             </li>
 
                             {
